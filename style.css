@@ -1,0 +1,26 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #92D5F4;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 6fr;
+}
+
+.header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #ffffff;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: #406a7e;
+}
