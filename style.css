@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Roboto-Black;
+    src: url(fonts/Roboto-Black.ttf);
+}
+
 html,
 body {
     box-sizing: border-box;
@@ -5,34 +10,98 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: Roboto-Black;
 }
 
 body {
-    background-color: #92D5F4;
+    background-color: #a2e27e;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 20vh 140vh;
+    grid-template-rows: 20vh 110vh;
 }
 
 .header {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: #eeeeee;
-    box-shadow: 0rem .5rem 1rem #406a7e;
-    color: #406a7e;
+    background-color: #ece1e1;
+    box-shadow: 0rem .5rem 1rem #666666;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.header .searchbar {
+    grid-area: 1/1/2/2;
+    height: 3vh;
+    width: 35vw;
+    border: 2px solid #c29024;
+    border-radius: 1vh;
+    margin: 3vh 0vh 0vh 10vh;
+}
+
+.header .searchbar:focus {
+    outline: #c29024 solid 2px;
+}
+
+.header .user-greeting {
+    grid-area: 2/1/3/2;
+    text-align: left;
+    margin-left: 18vh;
+}
+
+.header .user-home {
+    grid-area: 1/2/2/3;
+    text-align: right;
+}
+
+.header .project-interface {
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-button {
+    width: 15vh;
+    height: 5vh;
+    
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+
+    background-color: #34790c;
+    border: none;
+    border-radius: 2vh;
+
+}
+
+.project-button:hover {
+    appearance: none;
+    background-color: #2d6b08;
+}
+
+.project-button:active {
+    appearance: none;
+    background-color: #205005;
 }
 
 .sidebar {
     grid-column: 1;
     grid-row: 1/3;
-    background-color: #406a7e;
+    background-color: #34790c;
     color: #ffffff;
 }
 
 .upper-menu,
 .lower-menu {
     margin-top: 15%;
+    font-weight: bold;
 }
+
 .upper-menu li,
 .lower-menu li {
     font-size: 3vh;
@@ -55,10 +124,10 @@ body {
 
 .content-container {
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 6fr 2fr;
     grid-template-rows: 1fr 1fr;
     gap: 3%;
-    row-gap: 8%;
+    row-gap: 4%;
     padding: 5% 2% 3%;
 }
 
@@ -72,19 +141,24 @@ body {
 
 .project-container .project {
     height: 1fr;
-    background-color: #eeeeee;
+    background-color: #ece1e1;
     border-radius: 1vh;
-    box-shadow: .5rem .5rem 1rem #406a7e;
-    border-left: 15px solid #810d7b;
+    box-shadow: .5rem .5rem 1rem #666666;
+    border-left: 18px solid #c29024;
+}
+
+.project-container .project:hover {
+    outline: #34790c83 solid 5px;
 }
 
 .announcements,
 .trending {
     grid-column: 2/3;
-    background-color: #eeeeee;
+    background-color: #ece1e1;
     border-radius: 1vh;
-    box-shadow: .5rem .5rem 1rem #406a7e
+    box-shadow: .5rem .5rem 1rem #666666;
 }
+
 .announcements {
     grid-row: 1/2;
 }
