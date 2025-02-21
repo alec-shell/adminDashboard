@@ -11,6 +11,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: Roboto-Black;
+    font-size: 16px;
 }
 
 body {
@@ -63,17 +64,17 @@ body {
 .user-greeting p {
     padding: 0;
     margin-bottom: -1vh;
-    font-size: 2vh;
+    font-size: 1rem;
 }
 
 .user-greeting h2 {
-    font-size: 3vh;
+    font-size: 1.5rem;
 }
 
 .header .user-home {
     grid-area: 1/2/2/3;
     text-align: right;
-    font-size: 2vh;
+    font-size: 1.2rem;
     margin: 3vh 5vh 0vh 0vh;
 }
 
@@ -88,7 +89,7 @@ body {
     width: 15vh;
     height: 5vh;
     
-    font-size: 2vh;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
 
@@ -119,7 +120,7 @@ body {
 .logo {
     margin-left: 3vh;
     color: #ffffff;
-    font-size: 4vh;
+    font-size: 2.3rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -178,11 +179,11 @@ svg {
 }
 
 .project-container h2 {
-    font-size: 3vh;
+    font-size: 1.5rem;
 }
 
 .project-container p {
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 .project-container .project {
@@ -209,12 +210,18 @@ svg {
 
 .announcements h2,
 .trending h2 {
-    font-size: 2vh;
+    font-size: 1.2rem;
 }
 
 .announcements p {
-    font-size: 100%;
-    padding-bottom: 2vh;
+    font-size: 1rem;
+    padding-bottom: 1vh;
+
+}
+
+.ann-2 {
+    border-top: 2px solid #61ec10a1;
+    border-bottom: 2px solid #61ec10a1;
 }
 
 .announcements {
