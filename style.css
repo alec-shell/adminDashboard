@@ -18,7 +18,7 @@ body {
     background-color: #a2e27e;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 25vh 120vh;
+    grid-template-rows: 25vh 130vh;
 }
 
 .user-icon {
