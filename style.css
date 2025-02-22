@@ -11,7 +11,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: Roboto-Black;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 body {
@@ -19,6 +19,23 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 25vh 120vh;
+}
+
+.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 7vh;
+    height: 7vh;
+    border: 6px solid #52bd14;
+    border-radius: 4vh;
+}
+
+.user-icon svg {
+    width: 4vh;
+    height: 4vh;
+    padding-bottom: .5rem;
 }
 
 .header {
@@ -59,6 +76,20 @@ body {
     grid-area: 2/1/3/2;
     text-align: left;
     margin-left: 18vh;
+
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr;
+}
+
+.user-greeting .user-icon {
+    margin-top: 2vh;
+    grid-area: 1/1/2/2;
+}
+
+.user-greeting .greeting-text {
+    text-align: left;
+    grid-column: 1/2/1/3;
 }
 
 .user-greeting p {
@@ -76,8 +107,22 @@ body {
     text-align: right;
     font-size: 1.2rem;
     margin: 3vh 5vh 0vh 0vh;
+
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 1fr;
 }
 
+.user-home .user-icon {
+    margin: 0vh 0vh 0vh 28vh;
+    grid-area: 1/1/2/2;
+}
+
+.user-home .user-name {
+    margin: 2vh 0vh 0vh 1vh;
+    text-align: left;
+    grid-area: 1/2/2/3;
+}
 .header .project-interface {
     grid-area: 2/2/3/3;
     display: flex;
@@ -176,6 +221,16 @@ svg {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 4%;
+
+    position: relative;
+}
+
+.project-container:before {
+    position: absolute;
+    content: "Projects";
+    font-size: 2rem;
+    top: -6vh;
+    left: 0vh;
 }
 
 .project-container h2 {
@@ -184,6 +239,7 @@ svg {
 
 .project-container p {
     font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .project-container .project {
@@ -199,6 +255,14 @@ svg {
     outline: #c29024 solid 5px;
 }
 
+.project-svg {
+    text-align: right;
+}
+
+.project-svg svg {
+    margin-left: .3rem;
+}
+
 .announcements,
 .trending {
     grid-column: 2/3;
@@ -208,15 +272,14 @@ svg {
     padding: 2vh 4vh;
 }
 
-.announcements h2,
-.trending h2 {
+.announcements h2 {
     font-size: 1.2rem;
 }
 
 .announcements p {
-    font-size: 1rem;
+    font-size: .8rem;
+    font-family: 'Times New Roman', Times, serif;
     padding-bottom: 1vh;
-
 }
 
 .ann-2 {
@@ -226,8 +289,44 @@ svg {
 
 .announcements {
     grid-row: 1/2;
+    position:relative;
+}
+
+.announcements:before {
+    position: absolute;
+    content: "Announcements";
+    font-size: 2rem;
+    top: -6vh;
+    left: 0vh;
 }
 
 .trending {
     grid-row: 2/3;
+    position: relative;
 }
+
+.trending:before {
+    position: absolute;
+    content: "Trending";
+    font-size: 2rem;
+    top: -6vh;
+    left: 0vh;;
+}
+
+.trending .trend {
+    display: flex;
+    margin-bottom: 2vh;
+}
+
+.trending h2 {
+    font-size: 1rem;
+}
+
+.trending p {
+    font-size: .9rem;
+}
+
+.trending .user-icon {
+    margin-right: 2vh;
+}
+
