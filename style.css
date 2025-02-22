@@ -231,6 +231,7 @@ svg {
     font-size: 2rem;
     top: -6vh;
     left: 0vh;
+    color: #c29024;
 }
 
 .project-container h2 {
@@ -298,6 +299,7 @@ svg {
     font-size: 2rem;
     top: -6vh;
     left: 0vh;
+    color: #c29024;
 }
 
 .trending {
@@ -310,7 +312,8 @@ svg {
     content: "Trending";
     font-size: 2rem;
     top: -6vh;
-    left: 0vh;;
+    left: 0vh;
+    color: #c29024;
 }
 
 .trending .trend {
